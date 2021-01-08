@@ -140,13 +140,14 @@ nav {
 
 h3.title__product {
 	text-transform: uppercase;
-	color: #221111;
+	color: dodgerblue;
 	border-bottom: 1px solid orange;
 }
 
 p.product__description {
 	font-size: 14px;
 	padding: 5px 0;
+        color: #220000;
 }
 
 .prices_list{
