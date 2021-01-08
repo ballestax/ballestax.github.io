@@ -41,11 +41,12 @@ nav {
 	display: flex;		
 	height: 60px;
 	padding-top: 5px;
-	justify-content: space-between;	
+	
 }
 
 .nav-brand {
 	display: flex;
+	align-items: center;
 }
 
 .nav-logo {
@@ -53,13 +54,14 @@ nav {
 }
 
 .nav-title{
-	font-size: 2em;
+	font-size: 1.3em;
 	text-align: center;	
 	font-family: sans-serif;
-	line-height: 2;
+	padding: 5px;
+	margin-bottom: 5px;	
 }
 
-.nav-main ul {
+.nav-main ul.nav-menu {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -70,16 +72,31 @@ nav {
 	opacity: 0.9;
 	transform: translateX(-300px);
 	transition: transform .5s ease-in-out; 
+	z-index: 100;
 }
 
-.nav-main ul.show{
+.nav-main ul.nav-menu li {
+	display: block;
+	padding: 5px;
+	margin: 20px 10px;
+}
+
+li.item-menu:hover{
+	color: red;
+	margin-bottom: : 3px;
+	border-bottom: 1px solid red;
+}
+
+.nav-main ul.nav-menu.show{
 	transform: translateX(0px);
 }
 
 
 .nav-menu-btn {
-	padding: 10px;	
-
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	font-size: 1.4em;
 }
 
 /*CATEGORIES*/
@@ -89,9 +106,7 @@ nav {
 }
 
 .nav-categories {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: flex;	
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
 }
@@ -100,7 +115,7 @@ nav {
 	width: 150px;
 	min-width: 120px;
 	flex: 1;
-	font-size: 18px;
+	font-size: 1.3em;
 	font-weight: 600;
 }
 
