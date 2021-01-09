@@ -99,14 +99,25 @@ li.item-menu:hover{
 	font-size: 1.4em;
 }
 
-/*CATEGORIES*/
+/*CATEGORIES
 
 .categories{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.icon-category i{
+	flex: 0 0 50px;
+	font-size: 1.5em;
+	padding: 2px;
+	margin: 7px 5px 5px 5px;
+	align-self: center;
 
 }
 
 .nav-categories {
    display: flex;
+   align-items: center;
    flex-wrap: nowrap;
    overflow-x: auto;
    -webkit-overflow-scrolling: touch;
@@ -118,20 +129,13 @@ li.item-menu:hover{
 }
 
 
-.item-category {
+.nav-item {
 	flex: 0 0 auto;
+	padding: 5px;
+	margin: 5px 7px;
 	font-size: 1.2em;
-}
-
-.item-category a {
     color: #182123;
     white-space: nowrap;
-    overflow: hidden;
-}
-
-.nav-categories > li > a {
-    padding: 14px 10px;
-    display: block;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     text-transform: uppercase;
@@ -140,11 +144,18 @@ li.item-menu:hover{
 
 }
 
-.nav-categories > li > a.active {
-    border-bottom: 2px solid #E64A19;
+span.nav-item.active {
+    border-bottom: 2px solid #FF4A19;
 }
 
+span.nav-item:hover {
+    border-right: 1px solid #FF4A19;
+    border-left: 1px solid #FF4A19;
+    background-color: #FF4A1922;
 
+}
+
+*/
 
 /*CARTA*/
 
