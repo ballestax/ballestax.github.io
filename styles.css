@@ -121,8 +121,12 @@ li.item-menu:hover{
 .item-category {
 	flex: 0 0 auto;
 	font-size: 1.2em;
-	white-space: nowrap;
-        
+}
+
+.item-category a {
+    color: #182123;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .nav-categories > li > a {
