@@ -111,6 +111,7 @@ li.item-menu:hover{
 .categories{
 	display: flex;
 	flex-wrap: nowrap;
+        background-color: #111;
 }
 
 .icon-category i{
