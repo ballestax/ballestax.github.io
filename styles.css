@@ -120,8 +120,9 @@ li.item-menu:hover{
 
 .item-category {
 	flex: 0 0 auto;
-	font-size: 1.3em;
-	font-weight: 600;
+	font-size: 1.2em;
+	white-space: nowrap;
+        
 }
 
 .nav-categories > li > a {
