@@ -106,15 +106,20 @@ li.item-menu:hover{
 }
 
 .nav-categories {
-	display: flex;	
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+   display: flex;
+   flex-wrap: nowrap;
+   overflow-x: auto;
+   -webkit-overflow-scrolling: touch;
+   -ms-overflow-style: -ms-autohiding-scrollbar; 
 }
 
+.nav-categories::-webkit-scrollbar {
+  display: none; 
+}
+
+
 .item-category {
-	width: 150px;
-	min-width: 120px;
-	flex: 1;
+	flex: 0 0 auto;
 	font-size: 1.3em;
 	font-weight: 600;
 }
