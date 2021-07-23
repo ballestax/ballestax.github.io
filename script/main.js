@@ -1,17 +1,16 @@
 document.querySelector('.nav-menu-btn').addEventListener('click', () =>{
-	document.querySelector('.nav-menu').classList.toggle('show');
+	document.querySelector('.nav-menu').classList.toggle('show');	
 });
 
 document.querySelectorAll('.nav-item').forEach(item => {
 	item.addEventListener('click', event => {
 		
 		//change active class
-		document.querySelector('.nav-item.active').classList.toggle('active');
-		console.log('Element ' + event.target.innerHTML + ' was just clicked');
+		document.querySelector('.nav-item.active').classList.toggle('active');		
 		event.target.classList.toggle('active');
 
 		var category = event.target.innerHTML;
-		var products = document.querySelectorAll('.carta__product');
+		var products = document.querySelectorAll('.carta__product,.carta__product__tiny');
 		for(let i=0; i<products.length; ++i){
 			var selected = products[i].querySelector('.product__category');
 			var productCategory = selected.innerHTML;
@@ -29,6 +28,7 @@ document.querySelectorAll('.nav-item').forEach(item => {
 
 	});
 });
+
 
 /*
 ScrollReveal().reveal('.carta');
